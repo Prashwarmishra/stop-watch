@@ -6,9 +6,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("./background.jpg");
+  background: url("./images/background.jpg");
   background-size: cover;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,14 +19,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 95vh;
+  height: 100vh;
   color: #212c24;
 }
 
 body h1 {
-  font-family: 'Monoton', cursive;
+  font-family: "Monoton", cursive;
   font-size: 4.5rem;
   letter-spacing: 5px;
+  text-align: center;
 }
 
 body .wrapper {
@@ -65,7 +66,7 @@ body .wrapper .timer-group div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'ds-digit';
+  font-family: "ds-digit";
   font-size: 4rem;
   -webkit-box-shadow: 2px 2px 4px 2px darkgoldenrod;
           box-shadow: 2px 2px 4px 2px darkgoldenrod;
@@ -106,5 +107,20 @@ body .wrapper .button-group button {
 body .wrapper .button-group button:hover {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
+}
+
+@media screen and (max-width: 576px) {
+  body h1 {
+    margin: 0;
+    font-size: 3.5rem;
+  }
+  body .wrapper {
+    width: 85vw;
+    height: 70%;
+  }
+  body .wrapper .timer-group {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=style.css.map */
